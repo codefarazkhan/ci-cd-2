@@ -6,6 +6,7 @@ const port = 3000;
 app.get('/', (req, res) => {
     console.log('Received a request at /');
     console.log('Received a request at /2');
+    console.log('Received a request at /3');
   res.send('Hello World!');
 });
 
