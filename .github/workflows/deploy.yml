@@ -1,9 +1,12 @@
 name: Deploy Node.js App
 
 on:
+  pull_request:
+    branches:
+      - develop
   push:
     branches:
-      - develop  # Triggers when merged changes are pushed to develop
+      - develop
 
 jobs:
   deploy:
