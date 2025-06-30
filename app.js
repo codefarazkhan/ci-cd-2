@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
     console.log('Received a request at /3');
     console.log('Received a request at /4');
     console.log('Received a request at /5');
+    console.log('Received a request at /6');
   res.send('Hello World!');
 });
 
