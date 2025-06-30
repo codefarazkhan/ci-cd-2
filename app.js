@@ -5,7 +5,7 @@ const port = 3000;
 // Define a route
 app.get('/', (req, res) => {
   // Log the request to the console
-   console.log('Received a request at /');
+  console.log('Received a request at /');
   console.log('Received a request at /2');
   console.log('Received a request at /3');
   console.log('Received a request at /4');
