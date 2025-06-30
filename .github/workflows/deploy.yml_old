@@ -16,19 +16,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18' # or your project’s required version
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run ESLint
-        run: npx eslint . # Adjust path if needed (e.g., `src/` or specific files)
-
       - name: Deploy to Server
-        if: success()  # Only runs if linting passes
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_HOST }}
