@@ -1,9 +1,12 @@
 name: Deploy Node.js App
 
 on:
-  push:
+  pull_request:
     branches:
       - develop
+  # push:
+  #   branches:
+  #     - develop
 
 jobs:
   deploy:
